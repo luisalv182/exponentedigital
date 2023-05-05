@@ -6,7 +6,7 @@
 
 ## Patrones de diseño
 
-** Problema 1 ** Un cliente requiere utilizar sendgrid para envíos de email, pero otro cliente requiere enviarlos por mandril. Se quiere evitar el uso de IF, y realizar un diseño en donde podamos utilizar más servicios en caso de que un cliente requiera alguno en específico ¿Qué patrón de diseño utilizarías y por qué?
+**Problema 1** Un cliente requiere utilizar sendgrid para envíos de email, pero otro cliente requiere enviarlos por mandril. Se quiere evitar el uso de IF, y realizar un diseño en donde podamos utilizar más servicios en caso de que un cliente requiera alguno en específico ¿Qué patrón de diseño utilizarías y por qué?
 
 **Opción 1** Strategy
 **Opción 2** Factory Method
@@ -20,3 +20,12 @@
 > la parte de **Factory Method** se enfoca en crear objetos de una sola clase,  o familia de clases delegando solo a la creación de subclases que se pueden proporcionar diferentes implementaciones de los objetos. mientas que **Abstract Factory** s enfoca en la creación de objetos de multiples familias de clases relacionadas. 
 
 >Un ejemplo de **Factory Method** es la creación de graficos en esta se puede crear una clase y de ahi se delega para la formación de diferentes formas, mientras que el **Abstract Factory** podria ser una interfaz que sea utilizada en diferentes plataformas y esta se utiliza para que se implemente esta interfaz creando componentes pero sin modificar el código de la aplicación.
+
+
+## Instrucciones para correr los aplicativos
+
+1.- En la parte del frontend, hay que cambiar la dirección de la ip donde este montado la API, esta constante esta colocada en la carpeta **Config/constants.php**
+
+2.- Para la parte del backend hay que cambiar las credenciales de la base de datos a la cual va dirigida este base de datos esta en este repositiorio solo es cambiar las claves mediante el archivo de conexión en la carpeta **config/Database**
+
+Siguiendo estos dos pasos deberia de funcionar el aplicativo correctamente.
